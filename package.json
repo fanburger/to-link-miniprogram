@@ -1,0 +1,17 @@
+{
+  "name": "to-link",
+  "version": "1.0.0",
+  "description": "to link",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "link"
+  ],
+  "author": "YF",
+  "license": "ISC",
+  "dependencies": {
+    "@vant/weapp": "^1.10.2"
+  }
+}
