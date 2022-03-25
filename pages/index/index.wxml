@@ -1,0 +1,37 @@
+<view class="flex-column-cc">
+  <!-- 标题区 -->
+  <view class="head-title flex-column-cc">
+    <image src="../../img/to-link-login-title.png" mode="aspectFit" style="width:600rpx"></image>
+    <text>开启美好大学生活</text>
+  </view>
+  <view class="flex-column-cc input-con">
+    <view class="input-s flex-row-lc">
+      <image src="../../img/phone-icon.png" mode="aspectFit" style="width: 44rpx;"></image>
+      <view class="v-line"></view>
+      <input type="number" placeholder="请输入您的账号" data-key="account" bindblur="userInput" />
+    </view>
+    <view class="input-s flex-row-lc">
+      <image src="../../img/passwd-icon.png" mode="aspectFit" style="width: 60rpx;"></image>
+      <view class="v-line  v-line-1"></view>
+      <input type="number" placeholder="请输入您的密码" data-key="account" bindblur="userInput" />
+    </view>
+  </view>
+
+  <view class="help-r">
+    <text>登录遇到问题 ?</text>
+  </view>
+
+  <view class="login-button flex-column-cc">
+    <text>登录</text>
+  </view>
+  <view class="confirm-info flex-row-lc">
+    <image src="../../img/confirm-selected-icon.png" mode="aspectFit" style="width: 44rpx;height: 44rpx;"></image>
+    <view style="margin-left:14rpx;">我已阅读并同意</view>
+    <view style="color: #0659BE;">《To Link隐私政策》</view>
+  </view>
+
+  <view class="wx-login flex-column-cc">
+    <image src="../../img/wx-login-icon.png" mode="aspectFit" style="height: 140rpx;width: 140rpx;"></image>
+    <text style="color: #BCBCBC;">一键登录</text>
+  </view>
+</view>
