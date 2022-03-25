@@ -1,0 +1,88 @@
+.head-title {
+  position: relative;
+  top: 60rpx;
+  height: 300rpx;
+}
+
+.head-title>text {
+  position: relative;
+  top: -20rpx;
+  height: 48rpx;
+  font-family: MiSans-Regular;
+  font-size: 48rpx;
+  font-weight: normal;
+  line-height: 48rpx;
+  letter-spacing: 0.34em;
+  color: #2378F7;
+}
+
+.input-con {
+  position: relative;
+  top: 120rpx;
+  height: 286rpx;
+  justify-content: space-between;
+}
+
+.input-s {
+  width: 630rpx;
+  height: 106rpx;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  padding-left: 56rpx;
+  border-radius: 76rpx;
+  border: 6rpx solid #7083FF;
+  box-shadow: 0rpx 8rpx 20rpx 0rpx rgba(0, 0, 0, 0.3);
+}
+
+.v-line {
+  height: 56rpx;
+  width: 0rpx;
+  border: 2rpx solid #d7d7d7;
+  margin: 0 22rpx 0 22rpx;
+}
+
+.v-line-1 {
+  margin: 0 22rpx 0 10rpx;
+}
+
+.help-r {
+  position: relative;
+  top: 160rpx;
+  width: 630rpx;
+  display: flex;
+  color: #A4A4A4;
+  justify-content: flex-end;
+}
+
+
+.login-button {
+  position: relative;
+  top: 200rpx;
+  width: 630rpx;
+  height: 106rpx;
+  border-radius: 76rpx;
+  background: #3980FC;
+  box-sizing: border-box;
+  border: 8rpx solid #5994FA;
+}
+
+.login-button>text {
+  position: relative;
+  left: 30rpx;
+  font-family: MiSans-Regular;
+  font-size: 48rpx;
+  font-weight: normal;
+  line-height: 48rpx;
+  letter-spacing: 1.48em;
+  color: #FFFFFF;
+}
+
+.confirm-info {
+  position: relative;
+  top: 240rpx;
+}
+
+.wx-login {
+  position: relative;
+  top: 320rpx;
+}
