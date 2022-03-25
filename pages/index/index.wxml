@@ -13,7 +13,7 @@
     <view class="input-s flex-row-lc">
       <image src="../../img/passwd-icon.png" mode="aspectFit" style="width: 60rpx;"></image>
       <view class="v-line  v-line-1"></view>
-      <input type="number" placeholder="请输入您的密码" data-key="account" bindblur="userInput" />
+      <input type="number" placeholder="请输入您的密码" data-key="password" bindblur="userInput" />
     </view>
   </view>
 
