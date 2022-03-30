@@ -8,20 +8,21 @@
     <view class="input-s flex-row-lc">
       <image src="../../img/phone-icon.png" mode="aspectFit" style="width: 44rpx;"></image>
       <view class="v-line"></view>
-      <input type="number" placeholder="请输入您的账号" data-key="account" bindblur="userInput" />
+      <input type="number" placeholder="请输入您的手机号" data-key="account" bindblur="userInput" />
     </view>
     <view class="input-s flex-row-lc">
       <image src="../../img/passwd-icon.png" mode="aspectFit" style="width: 60rpx;"></image>
       <view class="v-line  v-line-1"></view>
-      <input type="number" placeholder="请输入您的密码" data-key="password" bindblur="userInput" />
+      <input placeholder="请输入您的密码" data-key="password" bindblur="userInput" password="true" />
     </view>
   </view>
 
   <view class="help-r">
+    <text style="color: #3980FC;" bindtap="goToSignUp">快速注册></text>
     <text>登录遇到问题 ?</text>
   </view>
 
-  <view class="login-button flex-column-cc">
+  <view class="login-button flex-column-cc" bindtap="loginByAccount">
     <text>登录</text>
   </view>
   <view class="confirm-info flex-row-lc">
