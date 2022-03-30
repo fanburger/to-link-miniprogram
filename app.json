@@ -3,13 +3,26 @@
     "pages/index/index",
     "pages/login/login",
     "pages/public-ground/ground",
-    "pages/personal-center/personal"
+    "pages/personal-center/personal",
+    "pages/index/sign-up/sign-up"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "To Link",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/public-ground/ground",
+        "text": "广场"
+      },
+      {
+        "pagePath": "pages/personal-center/personal",
+        "text": "个人中心"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json"
 }

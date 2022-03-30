@@ -1,0 +1,43 @@
+<view class="flex-column-cc">
+  <view class="sign-up-hello">
+    <image src="../../../img/sign-up-hello.png" mode="aspectFit"></image>
+  </view>
+
+  <view class="welcome-to">
+    <text>欢迎使用To Link!</text>
+  </view>
+
+
+  <view class="flex-column-cc input-sign-up">
+    <view class="input-s flex-row-lc">
+      <image src="../../../img/phone-icon.png" mode="aspectFit" style="width: 44rpx;"></image>
+      <view class="v-line"></view>
+      <input type="number" placeholder="手机号（11位）" data-key="phoneNumber" bindblur="signUpInput" />
+    </view>
+    <view class="input-s flex-row-lc">
+      <image src="../../../img/passwd-icon.png" mode="aspectFit" style="width: 60rpx;"></image>
+      <view class="v-line  v-line-1"></view>
+      <input placeholder="密码（8~30位）" data-key="firstPassword" bindblur="signUpInput" password="true" />
+    </view>
+    <view class="input-s flex-row-lc">
+      <image src="../../../img/passwd-icon.png" mode="aspectFit" style="width: 60rpx;"></image>
+      <view class="v-line  v-line-1"></view>
+      <input placeholder="确认密码" data-key="confirmPassword" bindblur="signUpInput" password="true" />
+    </view>
+  </view>
+
+  <view class="help-r">
+    <text decode="true" style="color: #3478F5;" bindtap="goToLogin">&lt;返回登录</text>
+    <text>注册遇到问题?</text>
+  </view>
+  <view class="sign-up-button flex-column-cc" bindtap="signUp">
+    <text>一键注册</text>
+  </view>
+
+  <view class="foo-items">
+    <text>《隐私政策》</text>
+    <text>《特别感谢》</text>
+    <text>《关于我们》</text>
+  </view>
+
+</view>
