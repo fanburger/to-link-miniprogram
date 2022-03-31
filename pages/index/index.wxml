@@ -31,7 +31,7 @@
     <view style="color: #0659BE;">《To Link隐私政策》</view>
   </view>
 
-  <view class="wx-login flex-column-cc">
+  <view class="wx-login flex-column-cc" bindtap="wxCodeLogin">
     <image src="../../img/wx-login-icon.png" mode="aspectFit" style="height: 140rpx;width: 140rpx;"></image>
     <text style="color: #BCBCBC;">一键登录</text>
   </view>
