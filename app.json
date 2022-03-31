@@ -4,7 +4,8 @@
     "pages/login/login",
     "pages/public-ground/ground",
     "pages/personal-center/personal",
-    "pages/index/sign-up/sign-up"
+    "pages/index/sign-up/sign-up",
+    "pages/requirements-center/requirements-center"
   ],
   "window": {
     "backgroundTextStyle": "light",
