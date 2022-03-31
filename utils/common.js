@@ -23,7 +23,6 @@ const wxGetUserProfile = () => {
 
 const setToken = (type, token) => {
   let authorization = `${type} ${token}`
-  console.log(authorization);
   wx.setStorage({
     key: 'token',
     data: authorization

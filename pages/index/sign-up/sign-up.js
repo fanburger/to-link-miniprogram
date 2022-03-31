@@ -63,7 +63,8 @@ Page({
       return
     }
     let {
-      nickName
+      nickName,
+      avatarUrl
     } = await comm.wxGetUserProfile()
     let code = await comm.wxLogin()
     let {
@@ -91,6 +92,15 @@ Page({
         icon: 'error',
         duration: 2000
       })
+    })
+
+    wx.setStorage({
+      key: 'nickName',
+      data: nickName
+    })
+    wx.setStorage({
+      key: 'avatarUrl',
+      data: avatarUrl
     })
   },
   /**

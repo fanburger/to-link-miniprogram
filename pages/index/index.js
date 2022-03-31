@@ -52,5 +52,38 @@ Page({
     wx.redirectTo({
       url: '/pages/index/sign-up/sign-up',
     })
+  },
+  wxCodeLogin: function (params) {
+    wx.login({
+      timeout: 5000,
+      success(res) {
+        console.log(res.code);
+        wx.request({
+          url: url.userWxCodeLogin,
+          method: 'POST',
+          data: {
+            code: res.code
+          },
+          success(res) {
+            if (res.data.access_token) {
+              comm.setToken(res.data.token_type, res.data.access_token)
+              wx.switchTab({
+                url: '/pages/public-ground/ground',
+              })
+            }
+            if (res.data.detail) {
+              wx.showToast({
+                title: '尚未注册',
+                duration: 2000,
+                icon: 'error'
+              })
+            }
+          },
+          fail(res) {
+            console.log(res);
+          }
+        })
+      }
+    })
   }
 })

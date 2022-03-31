@@ -4,7 +4,8 @@
     "pages/login/login",
     "pages/public-ground/ground",
     "pages/personal-center/personal",
-    "pages/index/sign-up/sign-up"
+    "pages/index/sign-up/sign-up",
+    "pages/requirements-center/requirements-center"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -16,13 +17,25 @@
     "list": [
       {
         "pagePath": "pages/public-ground/ground",
-        "text": "广场"
+        "text": "广场",
+        "iconPath": "img/public-no-selected.png",
+        "selectedIconPath": "img/public-selected.png"
+      },
+      {
+        "pagePath": "pages/requirements-center/requirements-center",
+        "text": "管理",
+        "iconPath": "img/requirements-cneter-no-selected.png",
+        "selectedIconPath": "img/requirements-center-selected.png"
       },
       {
         "pagePath": "pages/personal-center/personal",
-        "text": "个人中心"
+        "text": "个人",
+        "iconPath": "img/personal-center-no-selected.png",
+        "selectedIconPath": "img/personal-center-selected.png"
       }
-    ]
+    ],
+    "borderStyle": "white",
+    "selectedColor": "#1296db"
   },
   "sitemapLocation": "sitemap.json"
 }
