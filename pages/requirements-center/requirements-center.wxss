@@ -1,1 +1,63 @@
-/* pages/requirements-center/requirements-center.wxss */
+.handle-card {
+  position: relative;
+  top: 50rpx;
+  width: 668rpx;
+  height: 248rpx;
+  border-radius: 28rpx;
+  background: #FFFFFF;
+  box-shadow: 0 16rpx 32rpx 0 rgba(0, 0, 0, 0.16);
+}
+
+.choices-button {
+  position: relative;
+  top: -20rpx;
+  justify-content: space-between;
+  height: 130rpx;
+  width: 600rpx;
+}
+
+.each-button {
+  display: flex;
+  flex-direction: column;
+  width: 264rpx;
+  height: 128rpx;
+  border-radius: 20rpx;
+  background: rgba(52, 120, 245, 0.8);
+}
+
+.each-button:nth-child(2) {
+  background-color: #7123F7;
+}
+
+.notify-inline {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 20rpx;
+  height: 28rpx;
+  width: 600rpx;
+}
+
+.see-details {
+  font-size: 22rpx;
+  margin-left: auto;
+  color: #3478f5;
+}
+
+.each-button-line1 {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  letter-spacing: 0.14em;
+  width: 220rpx;
+  top: 20rpx;
+  left: 20rpx;
+}
+
+.each-button>text{
+  font-size: 20rpx;
+  position: relative;
+  top: 24rpx;
+  left: 20rpx;
+  color: white;
+}

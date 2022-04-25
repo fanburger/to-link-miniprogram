@@ -5,12 +5,21 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    searchValue: ''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
+  onChange(e) {
+   this.data.searchValue = e.detail
+  },
+  onSearch(e) {
+   console.log('onSearch',e)
+  },
+  onClick() {
+    console.log('onClick')
+  },
   onLoad: function (options) {
 
   },
