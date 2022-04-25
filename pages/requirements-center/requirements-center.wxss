@@ -54,7 +54,7 @@
   left: 20rpx;
 }
 
-.each-button>text{
+.each-button>text {
   font-size: 20rpx;
   position: relative;
   top: 24rpx;
