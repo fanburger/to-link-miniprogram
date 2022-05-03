@@ -1,0 +1,75 @@
+<view class="flex-column-cc">
+  <view class="search-bar">
+    <van-search style="width: 658rpx;" value="{{ searchValue }}" shape="round" placeholder="请输入搜索关键词" bind:change="onChange" bind:search="onSearch" />
+    <image src="/img/scan-icon.png" mode="widthFix" style="width: 64rpx;"></image>
+  </view>
+  <view style="z-index: 4;">
+    <image src="/img/ad-card-ill.png" mode="widthFix" style="width: 670rpx;"></image>
+  </view>
+
+  <view class="support-items">
+    <view class="each-item">
+      <image src="/img/out-food.png" mode="widthFix" style="width: 88rpx;"></image>
+      <view class="item-text">外卖代取</view>
+    </view>
+    <view class="each-item">
+      <image src="/img/honor-icon.png" mode="widthFix" style="width: 70rpx;"></image>
+      <view class="item-text">竞赛组队</view>
+    </view>
+    <view class="each-item">
+      <image src="/img/file.png" mode="widthFix" style="width: 88rpx;"></image>
+      <view class="item-text">文件打印</view>
+    </view>
+    <view class="each-item">
+      <image src="/img/crema-icon.png" mode="widthFix" style="width: 88rpx;"></image>
+      <view class="item-text">校园约拍</view>
+    </view>
+    <view class="each-item">
+      <image src="/img/game.png" mode="widthFix" style="width: 70rpx;"></image>
+      <view class="item-text">组队开黑</view>
+    </view>
+    <view class="each-item">
+      <image src="/img/pin-icon.png" mode="widthFix" style="width: 88rpx;"></image>
+      <view class="item-text">上理地图</view>
+    </view>
+    <view class="each-item">
+      <image src="/img/study-icon.png" mode="widthFix" style="width: 88rpx;"></image>
+      <view class="item-text">学习辅导</view>
+    </view>
+    <view class="each-item">
+      <image src="/img/more-icon.png" mode="widthFix" style="width: 88rpx;"></image>
+      <view class="item-text">更多服务</view>
+    </view>
+  </view>
+
+  <view class="com-center">
+    <view class="com-icon">
+      <image src="/img/com-center-icon.png" mode="widthFix" style="width: 96rpx;"></image>
+      <view class="com-text">话题中心</view>
+    </view>
+    <view class="com-titles">
+      <view class="com-title">·校园卡丢了怎么办捏？？？</view>
+      <view class="com-title">·如何在高数课上优雅的摸鱼呢~攻略</view>
+      <view class="com-title">·您有一份上理美食图鉴，请查收~</view>
+    </view>
+  </view>
+
+  <view class="center-switch-bar">
+    <view class="choice-page-btn">
+      <view class="choice-text" style="color: {{true ? '#3478F5':'#A7A7A7'}};">推荐</view>
+      <view class="under-line" style="background-color: {{true? '#3478F5':'#ffffff'}};"></view>
+    </view>
+    <view class="choice-page-btn">
+      <view class="choice-text" style="color: {{false ? '#3478F5':'#A7A7A7'}};">订阅</view>
+      <view class="under-line" style="background-color: {{false? '#3478F5':'#ffffff'}};"></view>
+    </view>
+    <view class="choice-page-btn">
+      <view class="choice-text" style="color: {{false ? '#3478F5':'#A7A7A7'}};">发现</view>
+      <view class="under-line" style="background-color: {{false? '#3478F5':'#ffffff'}};"></view>
+    </view>
+    <view class="choice-page-btn">
+      <view class="choice-text" style="color: {{false ? '#3478F5':'#A7A7A7'}};">交友</view>
+      <view class="under-line" style="background-color: {{false? '#3478F5':'#ffffff'}};"></view>
+    </view>
+  </view>
+</view>

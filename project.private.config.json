@@ -41,6 +41,13 @@
           "name": "",
           "pathName": "pages/requirements-center/requirements-center",
           "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/public-ground/ground",
+          "query": "",
           "scene": null,
           "launchMode": "default"
         }

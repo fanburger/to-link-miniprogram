@@ -30,5 +30,14 @@
       <view class="see-details">查看详情></view>
     </view>
   </view>
-
+  <view class="list-title">待办列表</view>
+  <block wx:for="{{cards}}">
+    <out-food-card wx:if="{{item.type === 'out_food' && item.status !='已完成'}}" order-info="{{item}}"></out-food-card>
+    <teammate-recruitment wx:if="{{item.type === 'teammate_recruit' && item.num_of_people.joined != item.num_of_people.recrui}}" card-info="{{item}}"></teammate-recruitment>
+  </block>
+  <view class="list-title">近期完成</view>
+  <block wx:for="{{cards}}">
+    <out-food-card wx:if="{{item.type === 'out_food' && item.status ==='已完成'}}" order-info="{{item}}"></out-food-card>
+    <teammate-recruitment wx:if="{{item.type === 'teammate_recruit' && item.num_of_people.joined === item.num_of_people.recrui}}" card-info="{{item}}"></teammate-recruitment>
+  </block>
 </view>

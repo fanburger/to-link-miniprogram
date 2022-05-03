@@ -1,9 +1,8 @@
 .handle-card {
-  position: relative;
-  top: 50rpx;
   width: 668rpx;
   height: 248rpx;
   border-radius: 28rpx;
+  margin-top: 36rpx;
   background: #FFFFFF;
   box-shadow: 0 16rpx 32rpx 0 rgba(0, 0, 0, 0.16);
 }
@@ -60,4 +59,12 @@
   top: 24rpx;
   left: 20rpx;
   color: white;
+}
+
+.list-title{
+  align-self: flex-start;
+  margin-top: 36rpx;
+  margin-left: 40rpx;
+  font-weight: bold;
+  letter-spacing: 4rpx;
 }

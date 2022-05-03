@@ -1,0 +1,36 @@
+<view class="out-food-card">
+  <view class="title-bar">
+    <image src="../../img/out-food-card.png" mode="aspectFill" class="title-image"></image>
+    <text class="title-text">帮助{{orderInfo.publisher_name}}代取的外卖</text>
+    <text class="status-text">{{orderInfo.status}}</text>
+  </view>
+
+  <view class="center-content">
+    <image src="/img/out-food-ill.png" mode="aspectFill" class="card-ill"></image>
+    <view class="address">
+      <view class="each-address">
+        <image src="/img/position-color-icon.png" mode="aspectFill" class="position-icon"></image>
+        <text class="address-text">{{orderInfo.address.start_position}}</text>
+      </view>
+      <view class="each-address">
+        <image src="/img/flag-color-icon.png" mode="aspectFill" class="position-icon"></image>
+        <text class="address-text">{{orderInfo.address.end_position}}</text>
+      </view>
+    </view>
+    <view class="order-overview">
+      <image src="{{orderInfo.order_shortcut_url}}" mode="aspectFill" class="order-img"></image>
+      <view class="order-text">美团订单</view>
+    </view>
+  </view>
+
+  <view class="handle-bar">
+    <view class="connect-assistant">
+      <image class="assistant-icon" src="/img/assistant-icon.png" mode="aspectFill"></image>
+      <text>联系客服</text>
+    </view>
+    <view class="gray-btn">联系发起人</view>
+    <view class="gray-btn">申请取消</view>
+    <view class="heightlight-btn">查看详情</view>
+  </view>
+
+</view>
