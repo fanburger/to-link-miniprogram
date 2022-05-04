@@ -1,4 +1,4 @@
-// pages/public-ground/ground.js
+// pages/about-us/about-us.js
 Page({
 
   /**
@@ -7,9 +7,9 @@ Page({
   data: {
 
   },
-  goToAboutUs:function(params) {
-    wx.redirectTo({
-      url: '/pages/about-us/about-us',
+  backHome:function (params) {
+    wx.switchTab({
+      url: '/pages/public-ground/ground',
     })
   },
   /**

@@ -1,0 +1,23 @@
+<view class="out-food-card">
+  <view class="bg-ill">
+    <image src="/img/out-food.svg" mode="widthFix" style="width: 100%;"></image>
+  </view>
+  <view class="main-info">
+    <view class="title-bar-1">
+      <view class="timer-title">
+        <image src="/img/clock.svg" mode="widthFix" style="width: 24rpx;"></image>
+        <view class="remain-time">{{orderInfo.left_time/60}}min</view>
+      </view>
+      <view class="amount">￥{{orderInfo.amount}}</view>
+    </view>
+    <view class="title-bar-2">
+      <image class="position-icon" src="/img/pin-icon.svg" mode="widthFix" style="width: 24rpx;"></image>
+      <view class="position-text">{{orderInfo.position.start}}</view>
+    </view>
+    <view class="title-bar-3">
+      <image class="position-icon" src="/img/flag-icon.svg" mode="widthFix" style="width: 24rpx;"></image>
+      <view class="position-text">{{orderInfo.position.end}}</view>
+      <image class="share-btn" src="/img/share-icon.svg" mode="widthFix" style="width: 38rpx;"></image>
+    </view>
+  </view>
+</view>

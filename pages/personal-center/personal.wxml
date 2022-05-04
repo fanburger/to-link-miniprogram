@@ -1,0 +1,32 @@
+<view class="flex-column-cc">
+  <view class="personal-info-card">
+    <view class="avatar-nickname">
+      <view class="avatar">
+        <image src="{{avatarUrl}}" mode="widthFix" style="width: 128rpx;"></image>
+      </view>
+      <view class="nickname">{{nickname}}</view>
+    </view>
+    <view class="personal-levels">
+      <view class="level">
+        <view class="level-text" style="color: #0098DF;">256</view>
+        <view class="level-type">贡献</view>
+      </view>
+      <view class="level">
+        <view class="level-text" style="color: #FF692E;">3W+</view>
+        <view class="level-type">获赞</view>
+      </view>
+      <view class="level">
+        <view class="level-text" style="color: #00B61E;">AAA</view>
+        <view class="level-type">荣誉</view>
+      </view>
+    </view>
+  </view>
+  <van-cell-group inset class="settings">
+    <van-cell title="地址管理" value="常用地址管理" is-link />
+    <van-cell title="资料审核" value="身份信息" is-link />
+    <van-cell title="回收站" value="已删除的条目" is-link />
+    <van-cell title="软件设置" value="信息权限等" is-link />
+    <van-cell title="联系客服" value="人工在线客服" is-link />
+  </van-cell-group>
+
+</view>

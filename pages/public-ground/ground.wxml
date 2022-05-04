@@ -3,7 +3,7 @@
     <van-search style="width: 658rpx;" value="{{ searchValue }}" shape="round" placeholder="请输入搜索关键词" bind:change="onChange" bind:search="onSearch" />
     <image src="/img/scan-icon.png" mode="widthFix" style="width: 64rpx;"></image>
   </view>
-  <view style="z-index: 4;">
+  <view style="z-index: 4;" bindtap="goToAboutUs">
     <image src="/img/ad-card-ill.png" mode="widthFix" style="width: 670rpx;"></image>
   </view>
 
