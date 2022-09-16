@@ -1,0 +1,72 @@
+.out-food-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #00CBB0;
+  overflow: hidden;
+  width: 320rpx;
+  height: 472rpx;
+  border-radius: 28rpx;
+  box-shadow: 0rpx 16rpx 64rpx 0rpx rgba(0, 0, 0, 0.16);
+}
+
+.bg-ill {
+  position: relative;
+  width: 300rpx;
+  margin-top: 24rpx;
+}
+
+.main-info {
+  width: 100%;
+  height: 178rpx;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16rpx;
+}
+
+.title-bar-1 {
+  display: flex;
+  width: 85%;
+  align-items: center;
+  margin-top: 10rpx;
+}
+
+.timer-title {
+  display: flex;
+  align-items: center;
+  gap: 10rpx;
+}
+
+.remain-time {
+  font-size: 22rpx;
+  color: #FFBA1A;
+}
+
+.amount {
+  margin-left: auto;
+  color: #FFCA5F;
+}
+
+.title-bar-2 {
+  display: flex;
+  width: 85%;
+  gap: 12rpx;
+  align-items: center;
+}
+
+.position-text {
+  font-size: 22rpx;
+}
+
+.title-bar-3 {
+  display: flex;
+  width: 85%;
+  align-items: center;
+  gap: 12rpx;
+}
+
+.share-btn {
+  margin-left: auto;
+}

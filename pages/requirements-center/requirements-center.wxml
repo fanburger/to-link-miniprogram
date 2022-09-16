@@ -1,2 +1,43 @@
-<!--pages/requirements-center/requirements-center.wxml-->
-<text>pages/requirements-center/requirements-center.wxml</text>
+<view class="flex-column-cc">
+  <view style="position:relative;justify-content: center;width: 690rpx;">
+    <van-search value="{{ searchValue }}" shape="round" placeholder="请输入搜索关键词" bind:change="onChange" bind:search="onSearch" />
+  </view>
+  <view class="flex-column-cc handle-card">
+    <view class="choices-button flex-row-lc">
+      <view class="each-button">
+        <view class="flex-row-lc each-button-line1">
+          <text style="font-size: 48rpx;color: white;">已完成</text>
+          <image src="../../img/end-icon.png" mode="widthFix" style="width: 48rpx;"></image>
+        </view>
+        <text>点击查看已完成的条目</text>
+      </view>
+      <view class="each-button">
+        <view class="flex-row-lc each-button-line1">
+          <text style="font-size: 48rpx;color: white;">发布</text>
+          <image src="../../img/new-item.png" mode="widthFix" style="width: 48rpx;"></image>
+        </view>
+        <text>赶快发布一个吧~</text>
+      </view>
+    </view>
+
+    <!-- divider line -->
+    <hr style="height: 2rpx;width: 600rpx;background-color: #E2E2E2;" />
+
+    <!-- inline notify -->
+    <view class="notify-inline">
+      <image src="../../img/notify-inline.png" mode="aspectFit" style="height: 28rpx;width: 28rpx;"></image>
+      <view style="font-size: 22rpx;margin-left: 12rpx;">您参与的外卖代取即将结束~</view>
+      <view class="see-details">查看详情></view>
+    </view>
+  </view>
+  <view class="list-title">待办列表</view>
+  <block wx:for="{{cards}}">
+    <out-food-card wx:if="{{item.type === 'out_food' && item.status !='已完成'}}" order-info="{{item}}"></out-food-card>
+    <teammate-recruitment wx:if="{{item.type === 'teammate_recruit' && item.num_of_people.joined != item.num_of_people.recrui}}" card-info="{{item}}"></teammate-recruitment>
+  </block>
+  <view class="list-title">近期完成</view>
+  <block wx:for="{{cards}}">
+    <out-food-card wx:if="{{item.type === 'out_food' && item.status ==='已完成'}}" order-info="{{item}}"></out-food-card>
+    <teammate-recruitment wx:if="{{item.type === 'teammate_recruit' && item.num_of_people.joined === item.num_of_people.recrui}}" card-info="{{item}}"></teammate-recruitment>
+  </block>
+</view>

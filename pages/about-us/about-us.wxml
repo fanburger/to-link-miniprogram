@@ -1,0 +1,6 @@
+<!--pages/about-us/about-us.wxml-->
+<view class="flex-column-cc">
+  <view style="width: 670rpx;box-shadow: 0px 16px 64px 0px rgba(0, 0, 0, 0.16);" >
+    <image src="/img/about-us-page.svg" mode="widthFix" style="width: 100%;" bindtap="backHome"></image>
+  </view>
+</view>

@@ -75,7 +75,8 @@ Page({
       phone_number: phoneNumber,
       password: firstPassword,
       code: code,
-      nickname: nickName
+      nickname: nickName,
+      avatar_url: avatarUrl
     })
     req.then((res) => {
       comm.setToken(res.data.token_type, res.data.access_token)
@@ -92,15 +93,6 @@ Page({
         icon: 'error',
         duration: 2000
       })
-    })
-
-    wx.setStorage({
-      key: 'nickName',
-      data: nickName
-    })
-    wx.setStorage({
-      key: 'avatarUrl',
-      data: avatarUrl
     })
   },
   /**

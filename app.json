@@ -5,7 +5,8 @@
     "pages/public-ground/ground",
     "pages/personal-center/personal",
     "pages/index/sign-up/sign-up",
-    "pages/requirements-center/requirements-center"
+    "pages/requirements-center/requirements-center",
+    "pages/about-us/about-us"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -37,5 +38,9 @@
     "borderStyle": "white",
     "selectedColor": "#1296db"
   },
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "out-food-card": "/components/take-out-food/out-food-card",
+    "teammate-recruitment": "/components/teammate-recruitment/teammate-recruitment"
+  }
 }

@@ -1,0 +1,63 @@
+.personal-info-card {
+  position: relative;
+  top: 36rpx;
+  width: 670rpx;
+  height: 417rpx;
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+  align-items: center;
+  border-radius: 28rpx;
+  box-shadow: 0rpx 16rpx 64rpx 0rpx rgba(0, 0, 0, 0.1);
+}
+
+.avatar-nickname {
+  margin-top: 46rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16rpx;
+}
+
+.avatar {
+  height: 128rpx;
+  width: 128rpx;
+  border-radius: 1000rpx;
+  overflow: hidden;
+  box-shadow: 8rpx 10rpx 22rpx 0rpx rgba(0, 0, 0, 0.1);
+}
+
+.nickname {
+  font-size: 40rpx;
+  font-weight: 500;
+}
+
+.personal-levels {
+  margin-top: 44rpx;
+  display: flex;
+  gap: 105rpx;
+}
+
+.level {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  letter-spacing: 0.2rem;
+}
+
+.level-text {
+  font-size: 48rpx;
+}
+
+.level-type {
+  font-size: 24rpx;
+  color: #9e9e9e;
+}
+
+.settings{
+  width: 720rpx;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 92rpx;
+}

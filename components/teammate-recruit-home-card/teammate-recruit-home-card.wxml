@@ -1,0 +1,26 @@
+<view class="out-food-card">
+  <view class="bg-ill">
+    <image src="/img/team-recruit-ill.svg" mode="widthFix" style="width: 100%;"></image>
+  </view>
+  <view class="main-info">
+    <view class="title-bar-1">
+      <view class="timer-title">
+        <image src="/img/emo-icon.svg" mode="widthFix" style="width: 32rpx;"></image>
+        <view class="remain-time">{{cardInfo.apply_num}}人报名</view>
+      </view>
+      <view class="amount">
+        <image src="/img/fire-icon.svg" mode="widthFix" style="width: 24rpx;"></image>
+        {{cardInfo.hot_num}}
+      </view>
+    </view>
+    <view class="title-bar-2">
+      <image class="position-icon" src="/img/flag-icon.svg" mode="widthFix" style="width: 24rpx;"></image>
+      <view class="position-text">{{cardInfo.comp_name}}</view>
+    </view>
+    <view class="title-bar-3">
+      <image class="position-icon" src="/img/date-icon.svg" mode="widthFix" style="width: 24rpx;"></image>
+      <view class="position-text">{{cardInfo.start_date}}~{{cardInfo.end_date}}</view>
+      <image class="share-btn" src="/img/share-icon.svg" mode="widthFix" style="width: 38rpx;"></image>
+    </view>
+  </view>
+</view>
